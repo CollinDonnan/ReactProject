@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Gaming PC Alpha",
+      "price": 899.99,
+      "category": "Gaming PC",
+      "specs": {
+        "cpu": "Intel i5-12400F",
+        "gpu": "NVIDIA GTX 1660 Super",
+        "ram": "16GB DDR4",
+        "storage": "512GB SSD"
+      },
+      "stock": 12,
+      "image": "/images/pc1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Workstation Pro X",
+      "price": 1299.00,
+      "category": "Workstation",
+      "specs": {
+        "cpu": "Intel i7-12700K",
+        "gpu": "NVIDIA RTX 3060",
+        "ram": "32GB DDR4",
+        "storage": "1TB SSD"
+      },
+      "stock": 5,
+      "image": "/images/pc2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Budget Office PC",
+      "price": 499.99,
+      "category": "Office PC",
+      "specs": {
+        "cpu": "AMD Ryzen 3 4100",
+        "gpu": "Integrated Radeon",
+        "ram": "8GB DDR4",
+        "storage": "256GB SSD"
+      },
+      "stock": 20,
+      "image": "/images/pc3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Gaming PC Ultra",
+      "price": 1599.00,
+      "category": "Gaming PC",
+      "specs": {
+        "cpu": "AMD Ryzen 7 5800X",
+        "gpu": "NVIDIA RTX 4070",
+        "ram": "32GB DDR4",
+        "storage": "1TB NVMe SSD"
+      },
+      "stock": 7,
+      "image": "/images/pc4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Creator Studio PC",
+      "price": 1899.99,
+      "category": "Creator / Editing",
+      "specs": {
+        "cpu": "Intel i9-12900K",
+        "gpu": "NVIDIA RTX 3080",
+        "ram": "32GB DDR5",
+        "storage": "2TB SSD"
+      },
+      "stock": 3,
+      "image": "/images/pc5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Home PC Mini",
+      "price": 349.00,
+      "category": "Home PC",
+      "specs": {
+        "cpu": "Intel i3-10100",
+        "gpu": "Integrated UHD",
+        "ram": "8GB DDR4",
+        "storage": "256GB SSD"
+      },
+      "stock": 15,
+      "image": "/images/pc6.jpg"
+    }
+  ]
+}
