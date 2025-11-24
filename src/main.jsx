@@ -49,7 +49,4 @@ function Footer() {
 [] <- empty dependency array means it runs once on mount
 
 [x] <- runs when x changes
-
-
-
 */

@@ -12,7 +12,7 @@
         "storage": "512GB SSD"
       },
       "stock": 12,
-      "image": "/images/pc1.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ9ec74j6Alt2x8EcTeG-kLa127Mh8RyJfww&s"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
         "storage": "1TB SSD"
       },
       "stock": 5,
-      "image": "/images/pc2.jpg"
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/franchise/precision/precision-fixed-imagery/compact-design/precision-fixed-franchise-mod3-expanded-1920x1440.png?fmt=png-alpha&wid=1920&hei=1440"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
         "storage": "256GB SSD"
       },
       "stock": 20,
-      "image": "/images/pc3.jpg"
+      "image": "https://cdn.mos.cms.futurecdn.net/d3F849bwjrLJJ7XNwa6VJ7.png"
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@
         "storage": "1TB NVMe SSD"
       },
       "stock": 7,
-      "image": "/images/pc4.jpg"
+      "image": "https://breunor.com/cdn/shop/files/rossa_7b01eaf6-eb4f-45b2-9437-c00d4b4dc97d.jpg?v=1757060005&width=1024"
     },
     {
       "id": 5,
@@ -68,7 +68,7 @@
         "storage": "2TB SSD"
       },
       "stock": 3,
-      "image": "/images/pc5.jpg"
+      "image": "https://velocitymicro.com/img/category-thumbnails/SX3-category-thumbnail.png"
     },
     {
       "id": 6,
@@ -82,7 +82,7 @@
         "storage": "256GB SSD"
       },
       "stock": 15,
-      "image": "/images/pc6.jpg"
+      "image": "https://m.media-amazon.com/images/I/616+jU7dPJL._AC_UF894,1000_QL80_.jpg"
     }
   ]
 }
