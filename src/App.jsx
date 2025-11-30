@@ -39,6 +39,11 @@ function ProductCard({ product }) {
   )
 }
 
+function clearCart() {
+  setCart([]);
+  localStorage.removeItem("cart");
+}
+
 const addToCart = (product) => {
   setCart(prevCart => {
     const updatedCart = [...prevCart, product];
@@ -94,8 +99,9 @@ const displayCart = () => {
           boxShadow: "-2px 0 5px rgba(0,0,0,0.5)"
         }}>
           <h2>Shopping Cart</h2>
+            <button onClick={() => clearCart()} style={{marginBottom: "10px"}}>Clear Cart</button>
+            {displayCart()}
           <button onClick={() => setShowCart(false)} style={{marginBottom: "10px"}}>Close</button>
-          {displayCart()}
         </div>
       )}
       

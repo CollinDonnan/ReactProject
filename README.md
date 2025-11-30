@@ -10,6 +10,7 @@
 # Optional Features
 - Use localStorage so refreshing the page does not lose the cart.(10 points)
 - Load item list using fetch from a JSON file or public API instead of hardcoding.(10 points)
+-  Clear-cart button(10 points)
 
 # How to run the project
 
