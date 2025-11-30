@@ -3,10 +3,15 @@ import { useEffect } from 'react'
 import './index.css'
 
 
+function App() {
+    const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
+
+
 function ProductCard({ product }) {
   return (
     <div className="product-card">
-          <img src={product.image} width="100px"></img>
+          <img src={product.image} width="100px" alt={product.name} />
           <h2>{product.name}</h2>
           <p>Price: ${product.price}</p>
           <p>Stock: {product.stock}</p>
@@ -15,16 +20,23 @@ function ProductCard({ product }) {
             <li>CPU: {product.specs.cpu}</li>
             <li>RAM: {product.specs.ram}</li>
             <li>Storage: {product.specs.storage}</li>
-            <input type="button" value="Add to Cart"></input>
           </ul>
+          <input type="button" value="Add to Cart" onClick={() => addToCart(product)} />
     </div>
   )
 }
 
+const addToCart = (product) => {
+    setCart(prevCart => [...prevCart, product]);
+  };
 
-function App() {
-  const [products, setProducts] = useState([]);
-
+const displayCart = () => {
+    var cartString = "";
+    cart.forEach((product) => {
+      cartString += product.name + "\n";
+    });
+    alert("Cart Items:\n" + cartString);
+  }
 
   useEffect(() => {
     fetch("/products.json")
@@ -38,7 +50,7 @@ function App() {
   return(
     <>
       <h1 style={{ color: "white", display: "inline" }}>PC Store</h1>
-      <p style={{display: "inline", float: "right", fontSize: "24px"}}>🛒</p>
+      <p onClick={displayCart} style={{display: "inline", float: "right", fontSize: "24px", cursor: "pointer"}}>🛒</p>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
