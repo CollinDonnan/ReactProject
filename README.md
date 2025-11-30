@@ -8,7 +8,8 @@
 - A button toggles showing/hiding the cart panel
 
 # Optional Features
-- Load item list using fetch from a JSON file or public API instead of hardcoding.
+- Use localStorage so refreshing the page does not lose the cart.(10 points)
+- Load item list using fetch from a JSON file or public API instead of hardcoding.(10 points)
 
 # How to run the project
 
