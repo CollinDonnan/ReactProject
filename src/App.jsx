@@ -5,8 +5,12 @@ import './index.css'
 
 function App() {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState(loadCart());
 
+    function loadCart(){
+      var savedCart = localStorage.getItem("cart");
+      return savedCart;
+    }
 
 function ProductCard({ product }) {
   return (
@@ -27,6 +31,11 @@ function ProductCard({ product }) {
 }
 
 const addToCart = (product) => {
+  var CurrentCart = localStorage.getItem("cart");
+  if(CurrentCart == null){
+    CurrentCart = [];
+  }
+  localStorage.setItem("cart", CurrentCart);
     setCart(prevCart => [...prevCart, product]);
   };
 
